@@ -1,0 +1,170 @@
+
+body{
+    
+    color: white;
+    text-decoration: none;
+    margin: auto;
+
+}
+
+/* Header Tag */
+
+.headerBackground{
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px;
+}  
+
+.headerContain{
+    padding: 10px;
+    color: #fff;
+}
+
+.discount{
+    padding-left: 20%;
+    color: #fff;
+}
+
+.register{
+    float: right;
+    color: #fff;
+    height: 8px;
+}
+
+.registerButton{
+  font-size: 10px;
+  background-color: yellowgreen;
+}
+
+/* Nav Bar */
+
+.main-nav{
+    background-color: white;
+    
+}
+
+.main-nav a{
+    color: black;
+    text-decoration: none;
+    padding-left: 5%;
+    
+
+}
+.search{
+    color: black;
+}
+.lock{
+    color: black;
+}
+
+/* Strawberry image */
+
+.strawberry{
+    position: relative;
+    
+}
+.strawberry img{
+    filter: grayscale(60%)
+    
+}
+
+
+.text{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    background-color: yellowgreen;
+    color: white;
+    padding: 20px;
+    
+   
+}
+
+
+.text1{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-size: x-large;
+    color: white;
+    padding: 20px;
+}
+
+/* Form and side image */
+
+h6, p{
+    color: black;
+
+    
+}
+
+h6{
+    margin-top: 50px;
+}
+#gray{
+    background-color:rgba(0,0,0,0.5)
+    
+}
+
+.form-control{
+    width: 650px;
+    height: 35px;
+
+}
+
+.form-control-1{
+    width: 650px;
+    height: 75px;
+}
+
+.smButton{
+    color: white;
+    background-color: yellowgreen;
+    margin-bottom: 30px;
+    margin-left: 250px;
+}
+
+/*  side image */
+
+.main-1{
+    position: relative;
+}
+
+.col img{
+    filter: grayscale(50%);
+    width : 365px;
+    height : 300px;
+}
+.text2{
+    position: absolute;
+    bottom: 20px;
+    font-size: medium;
+    color: black;
+   
+}
+
+
+/* Footer -submit btn */
+
+.btn{
+    background-color: yellowgreen;
+    color: white;
+    border-radius:0%;
+}
+/* Footer  */
+.main-footer{
+    background-color: black;
+}
+u{
+    color: yellow;
+    
+}
+.col h3{
+    color: white;
+}
+
+.col p{
+    color: white;
+}

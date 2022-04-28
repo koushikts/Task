@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JavaScript - Task</title>
+</head>
+<body>
+    <script>
+// 1. Check the numbers are consecutive 
+// '12345' === true
+
+let arr =[1,2,3,4,5];
+const differenceArr = arr.slice(1).map(function(n,i){
+    return n -arr[i]; })
+const isDifference = differenceArr.every(value => value == 1)
+console.log(isDifference); 
+
+// '1245'  === false
+let arr1 = [1,2,4,5];
+const diffArr = arr1.slice(1).map(function(mov,i){
+    return mov- arr1[i];
+})
+const isDiff = diffArr.every(value => value == 1 )
+console.log(isDiff);
+
+// '567'   ==== true
+let arr2 = [5,6,7];
+const diffArr1 = arr2.slice(1).map(function(mov,i){
+    return mov- arr2[i];
+})
+const isDiff1 = diffArr1.every(value => value == 1 )
+console.log(isDiff1);
+
+// or
+
+let count =0;
+        let array = "567";
+       
+        for(i=0; i<=array.length-1; i++){
+            if((array[i] - array[i-1]) ==1){
+               
+                count++;
+            }
+            if(count==arr.length-1){
+                res =true;
+            }else{
+                res =false;
+            }
+
+        }; console.log(res);
+
+
+
+// '568'.  === false
+let arr3 = [5,6,8];
+const diffArr2 = arr3.slice(1).map(function(mov,i){
+    return mov- arr3[i];
+})
+const isDiff2 = diffArr2.every(value => value == 1 )
+console.log(isDiff2);
+
+console.log(`-------- another method ----------`)
+
+         const arr4 = "123456";  // true
+         const arr5 = "1235";  // false
+         const arr6 = "567"; // true
+         const arr7 ="568";  // false
+
+
+let consecutive = (arr1)=>{
+            for(i=0 ; i<=arr1.length-1; i++){
+                res='';
+                if((arr1[i]-arr1[i-1])==1){
+                    res = true;
+                }else{
+                    res =false;
+                }
+            } return res;
+        };
+        console.log(consecutive(arr4));
+        console.log(consecutive(arr5));
+        console.log(consecutive(arr6));
+        console.log(consecutive(arr7));
+
+
+
+console.log(`----------- Break ----------`);
+// 2. Remove all Special characters
+
+// 'a#b#c' === 'abc'
+// 'A!b#c$' =='abc' 
+
+    let str ="a#b#c";
+    let str2 ="A!b#c$"
+   
+    const remove = (input) => {
+        let res1 ='';
+        for(i=0; i<=str.length-1; i++){
+            
+        if(i%2 == 0){
+          res1 += input[i];
+        };
+
+    }; 
+    return res1;
+    };
+    console.log(remove(str));
+    
+    console.log(remove(str2.toLowerCase()))
+
+
+    console.log(`----------- Break ----------`);
+
+//     3. Calculate the total
+
+// const = {
+//  a :1,
+//  b : {
+//     c: -2,
+//     D: 4
+// },
+//  e: 3
+// } 
+
+// Output === 6
+
+const obj1 ={
+        a:1,
+        b:{
+            c:-2,
+            d:4,
+            },
+        e:3
+    };
+
+     res =[];
+
+        res.push(obj1.a,obj1.e,obj1.b.c,obj1.b.d);
+        const total = res.reduce((acc,mov)=>acc + mov);
+        console.log(total);
+    
+
+        
+    console.log(`----------- Break ----------`);
+
+      //  4. Add positive numbers only
+
+   // [3, -1, 5] === 8
+
+const arr8 =[3,-1,5];
+
+const sum = arr8.filter(mov => mov > 0 ).reduce((acc,mov) => acc + mov, 0);
+console.log(sum);  
+
+  // [-1, 2, 3, -4] === 5
+
+let sum1 = (input) => {
+        console.log(input.filter (mov => mov > 0).reduce((acc,mov) => acc + mov,0));
+    }
+    const arr9 = [-1,2,3,-4];
+
+    sum1(arr9);
+
+
+
+
+    </script>
+    
+</body>
+</html>
